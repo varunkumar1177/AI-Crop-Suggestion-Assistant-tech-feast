@@ -1,12 +1,13 @@
 body{
   margin: 0;
-  background-image: url(images/crop2.jpg) ;
+  background-image: url(crop2.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: blur(5px);
   height: 100%;
   width: 100%;
+  
 }
 li{
   font-size: 1.5em;
@@ -309,7 +310,7 @@ footer{
 }
 @media (max-width: 768px) {
 body{
-  background-image: url(images/crop2.jpg);
+  background-image: url(crop2.jpg);
   margin: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,4 +371,5 @@ body{
       width: auto;
       padding: 10px;
   }
+
 }
