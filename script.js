@@ -8,7 +8,12 @@ async function getweather() {
     if (!response.ok) throw new Error("City not found");
     
     const data = await response.json();
+
+   
+
+
     document.getElementById("result").innerHTML = `
+      <h2>Today's Weather Update</h2>
       <div class="tips-section">
       <h3>${data.name}, ${data.sys.country}</h3>     <p><img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather Icon"></p> 
       <p>📅 Date: ${new Date().toLocaleDateString()}</p>
@@ -88,7 +93,8 @@ function cropsuggestion() {
 
   const crops = cropSuggestions[soil][season];
 
-  let output = `<h3>Based on ${soil} soil and ${season} season, we suggest:</h3>`;
+  let output = `<h2>Crop Suggestion </h2>
+                <h3>Based on ${soil} soil and ${season} season, we suggest:</h3>`;
   output += `<div class="crop-suggestions">`;
 
   crops.forEach(crop => {
