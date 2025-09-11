@@ -7,70 +7,25 @@
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Alumni+Sans+Inline+One:ital@0;1&family=Bebas+Neue&family=Concert+One&family=Delius&family=Oi&family=Patrick+Hand&family=Permanent+Marker&family=Rancho&family=Share+Tech+Mono&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
-
 </head>
 <body >
-
-   
-       <h1 class="head">AI crop suggestion Assistant</h1>
-    
-    
-    <div class="container">
-
-    <div class="left">
-        <h2>Crop Suggestion Form</h2>
-    <form id="crop-form">
-
-        <label for="city" class="text">Enter your city : </label>
-        <input type="text" id="city" name="city" placeholder="City Name..." required>
-        <br>
-
-        <label for="soil" class="text">Select your soil type : </label>
-        <select id="soil">
-            <option value="clay">Clay</option>
-            <option value="sandy">Sandy</option>
-            <option value="Loamy">Loamy</option>
-        </select>
-        <br>
-
-        <label for="season" class="text">Select the Season : </label>
-        <select id="season">
-            <option value="summer">Summer</option>
-            <option value="winter">Winter</option>
-            <option value="monsoon">monsoon</option>
-        </select>
-        <br>
-
-        <div class="button-container">
-        <button type="button" class="btn1" onclick="getweather()">Get Weather Forecast</button>
-        <button type="button" class="btn2" onclick="cropsuggestion()">Get Crop Suggestion</button>
-        <button type="reset" class="btn3" onclick="resetbutton()">reset</button>
-        <a href="index.html"><button type="button" class="btn4">Home Page</button></a>
+    <div class="box box1">
+        <div class="section-1">
+        <img src="robot3.PNG" alt="robot image" class="robot">
         </div>
 
+        <div class="section-2">
+        <h1>Welcome to SmartFarm</h1>
+        <p>"Empowering Farmers with Data-Driven Insights for Better Crop Yield and sustainable Farming"</p>
+        <a href="weather.html"><button type="button" class="btn-group">Explore Weather</button></a>
+        <a href="crop.html"><button type="button" class="btn-group">Get Crop Suggestion </button></a>
+        <a href="index.html"><button type="button" class="btn-group">Go Home</button></a>
         </div>
-
-        <div class="middle">
-            <h2>Today's Weather Update</h2>
-        <div id="result" class="font"></div>
-        <div id="error"></div>
-
-        </div>
-        <div class="right">
-        <h2>Crop Suggestion </h2>
-        <div id="crop" class="font"></div>
-        </div>
-
-    </form>
-
     </div>
     <script src="script.js"></script>
 </body>
 <hr>
 <footer>
-    <p>Devloped by <b>VarunKumar</b> | &copy; All Right Reserved 2025</p>
+    <p>Devloped by <b>Team TECH FEAST TF38</b> | &copy; All Right Reserved 2025</p>
 </footer>
 </html>
-
