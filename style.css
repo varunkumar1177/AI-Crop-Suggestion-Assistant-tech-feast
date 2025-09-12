@@ -116,6 +116,11 @@ h3{
   margin: 50px;
   gap: 40px;
 }
+.section-1 label{
+  font-size: 1.5em;
+  font-family: "Merriweather", serif;
+  font-weight: 200;
+}
 .section-2 p{
   font-size: 1.5em;
   font-family: "Merriweather", serif;
@@ -484,4 +489,5 @@ footer{
 
 
 }
+
 
