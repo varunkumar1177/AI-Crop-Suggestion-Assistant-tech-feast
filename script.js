@@ -84,60 +84,8 @@ function cropsuggestion() {
         {name:"Barley",duration:"100 days",water:"Low",demand: "⭐⭐"}, 
         {name:"Mustard",duration:"90 days",water:"Low",demand: "⭐⭐⭐" }
       ]
-    },
-    black: {
-    summer: [
-      { name: "Cotton", duration: "150 days", water: "High" ,demand: "⭐⭐⭐⭐"},
-      { name: "Soybean", duration: "95 days", water: "Medium",demand: "⭐⭐⭐⭐" },
-      { name: "Tur (Pigeon pea)", duration: "120 days", water: "Medium",demand: "⭐⭐⭐⭐" }
-    ],
-    monsoon: [
-      { name: "Jowar", duration: "110 days", water: "Medium",demand: "⭐⭐⭐⭐" },
-      { name: "Maize", duration: "120 days", water: "High",demand: "⭐⭐⭐⭐" },
-      { name: "Sunflower", duration: "100 days", water: "Medium" ,demand: "⭐⭐⭐⭐"}
-    ],
-    winter: [
-      { name: "Wheat", duration: "120 days", water: "Medium",demand: "⭐⭐⭐⭐" },
-      { name: "Gram", duration: "110 days", water: "Low" ,demand: "⭐⭐⭐⭐"},
-      { name: "Linseed", duration: "100 days", water: "Low",demand: "⭐⭐⭐⭐" }
-    ]
-  },
-
-  red: {
-    summer: [
-      { name: "Groundnut", duration: "100 days", water: "Medium" ,demand: "⭐⭐⭐⭐"},
-      { name: "Millets", duration: "90 days", water: "Low",demand: "⭐⭐⭐⭐" },
-      { name: "Cotton", duration: "150 days", water: "High" ,demand: "⭐⭐⭐⭐"}
-    ],
-    monsoon: [
-      { name: "Paddy", duration: "130 days", water: "Very High",demand: "⭐⭐⭐⭐" },
-      { name: "Maize", duration: "110 days", water: "High",demand: "⭐⭐⭐⭐" },
-      { name: "Pulses", duration: "100 days", water: "Medium" ,demand: "⭐⭐⭐⭐"}
-    ],
-    winter: [
-      { name: "Wheat", duration: "120 days", water: "Medium" ,demand: "⭐⭐⭐⭐⭐"},
-      { name: "Mustard", duration: "100 days", water: "Low",demand: "⭐⭐⭐⭐⭐" },
-      { name: "Barley", duration: "110 days", water: "Low" ,demand: "⭐⭐⭐⭐⭐" }
-    ]
-  },
-
-  alluvial: {
-    summer: [
-      { name: "Sugarcane", duration: "300 days", water: "High" ,demand: "⭐⭐⭐⭐⭐" },
-      { name: "Maize", duration: "120 days", water: "High",demand: "⭐⭐⭐⭐⭐"  },
-      { name: "Pulses", duration: "100 days", water: "Medium" ,demand: "⭐⭐⭐⭐⭐" }
-    ],
-    monsoon: [
-      { name: "Paddy", duration: "130 days", water: "Very High",demand: "⭐⭐⭐⭐⭐"  },
-      { name: "Jute", duration: "150 days", water: "High",demand: "⭐⭐⭐⭐⭐"  },
-      { name: "Soybean", duration: "90 days", water: "Medium",demand: "⭐⭐⭐⭐⭐"  }
-    ],
-    winter: [
-      { name: "Wheat", duration: "125 days", water: "Medium" ,demand: "⭐⭐⭐⭐⭐" },
-      { name: "Barley", duration: "110 days", water: "Low",demand: "⭐⭐⭐⭐⭐"  },
-      { name: "Peas", duration: "100 days", water: "Low",demand: "⭐⭐⭐⭐⭐"  }
-    ]
-  }
+    }
+  
   };
   if (!soil || !season){
     document.getElementById("crop").innerHTML = `<p style="color:red;">Please select both soil type and season.</p>`;
